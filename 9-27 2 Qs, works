@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Lauren Schoepfer's Quiz</title>
+<style>
+
+body {
+	background: #f9f3e9;
+	font: 100% "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*
+img {
+	max-width: 100%;
+}
+h2 {
+	text-align: center;
+	font-variant: small-caps;
+}
+#header; #nav {
+width: 100%
+}
+
+@media screen and (max-width:480px)  {
+	#contact1 {
+		width: 48%;
+		margin: 1em 0;
+		border-bottom: 1px dashed #cccccc;
+		float: left;
+}
+#contact2 {
+		width: 48%
+		margin: 1em 0;
+		border-bottom: 1px dashed #000000
+		float: right;
+}
+#photo1 {
+	width: 70%;
+	float: left;
+}
+#photo2 {
+	
+}
+
+this is image answers, put in one question
+	<input type="image" src="http://exmoorpet.com/wp-content/uploads/2012/08/cat.png" max height=200px name="animal" id="cat" value="Cat" />
+	<input type="image" src="http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg" max height=200px  name="animal" id="dog" value="Dog" />
+*/
+</style>
+</head>
+<body>
+	<h1>What Is Your Spirit Animal?</h1>
+	<p id= 'introParagraph'>With what animal does your personality align? Find out by taking this quiz!</p>
+	<form>
+	
+
+<p id= 'firstQ'>1. Are you usually a loud or quiet person?<br>
+	<blockquote>
+	<input type ="radio" name="loudOrQuiet" id="loud" value="Loud"> <label for="loud">Loud</label><br>
+	<input type ="radio" name="loudOrQuiet" id="quiet" value="Quiet"> <label for="quiet">Quiet</label>
+	</blockquote>
+</p>
+	<br>
+
+<p id='secondQ'>2. Your closest friends would describe you as:<br>
+	<blockquote>
+	<input type="radio" name="trait" id="loyal" value="Loyal"> <label for="loyal">Loyal</label>
+	<br><input type="radio" name="trait" id="smart" value="Smart"> <label for="smart">Smart</label>
+	<br><input type="radio" name="trait" id="friendly" value="Friendly"> <label for="friendly">Friendly</label>
+	<br><input type="radio" name="trait" id="mellow" value="Mellow"> <label for="mellow">Mellow</label>
+	<br><input type="radio" name="trait" id="strong" value="Strong"> <label for="strong">Strong</label>
+	</blockquote>
+</p>
+		
+	<br><br><input type="button" id="quizButton" value="Get Results!">
+	</form>
+	
+
+	<p id='resultParagraph'></p>
+</body>
+<script>
+	var animals = ['Turtle','Snake','Wolf','Cat','Dolphin','Owl','Deer','Bear','Rabbit'];
+	var points = [0,0,0,0,0,0,0,0,0];
+	
+	function init() {
+		var button = document.getElementById('quizButton');
+		button.onclick = checkQuiz;
+	}
+	function checkQuiz() {
+		var q1;
+		var q2;
+		var inputs = document.getElementsByName('loudOrQuiet');
+		q1 = findValue(inputs);
+		switch(q1) {
+			case 'Loud': 
+				points[2,4,7]++;
+				break;
+			case 'Quiet': 
+				points[0,1,3,5,6,8]++;
+				break;
+		}
+
+		inputs = document.getElementsByName('trait');
+		q2 = findValue(inputs);
+			switch(q2) {
+			case 'Loyal': 
+				points[2]++;
+				break;
+			case 'Smart': 
+				points[3,4]++;
+				break;
+			case 'Friendly': 
+				points[4,6]++;
+				break;
+			case 'Mellow': 
+				points[0,3,8]++;
+				break;
+			case 'Strong':
+				points[1,7]++;
+		}
+		
+		//alert('Clicked');
+		//alert(inputs[0]);
+		//keep track of the highest point value so far
+		maxScore = 0;
+		//keep track of where that high score is (the index)
+		maxIndex = 0;
+		//cycle through to find the highest score
+		for (var i=0; i<points.length; i++) {
+			if (points[i] > maxScore) {
+				//saves the index if this is a new high score
+				maxIndex = i;
+			}
+		}
+		//grabs the house corresponding with the high score's index
+		animals = animals[maxIndex];
+		//displays results
+		//note that this example does not deal with cases where two houses are even
+		displayAnimal(animals);
+	}
+	function findValue(inputs) {
+		var checked;
+		for (var i=0; i<inputs.length; i++) {
+			if (inputs[i].checked) {
+				//alert(inputs[i].value);
+				checked = inputs[i].value;
+				return(checked);
+			}
+		}
+		if (!checked) {
+			alert('Please choose a value.');
+		}
+	}
+	function displayAnimal(animals) {
+		var image = document.createElement('img');
+		image.className = 'animal';
+		var source = document.getElementById('resultParagraph');
+		var text = 'Congratulations! Your spirit animal is a ' + animals + '!';
+		
+		/*switch(animals) {
+			case 'Slytherin': 
+				image.src = 'http://www.hp-lexicon.org/images/icons/shield_sly.jpg';
+				break;
+			case 'Gryffindor': 
+				image.src = 'http://www.hp-lexicon.org/images/icons/shield_01-5B1-5D.jpg';
+				break;
+			case 'Hufflepuff': 
+				image.src = 'http://www.hp-lexicon.org/images/icons/shield_huf.jpg';
+				break;
+			case 'Ravenclaw': 
+				image.src = 'http://www.hp-lexicon.org/images/icons/shield_rav.jpg';
+				break;
+			default:
+				image.src = 'broken.jpg';
+		}
+		*/
+		source.appendChild(image);
+		source.innerHTML += '<br>' + text;
+	}
+	window.onload = init;
+</script>
+</html>
+
+
+
+
+
+

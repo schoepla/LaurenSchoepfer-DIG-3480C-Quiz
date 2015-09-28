@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Lauren Schoepfer's Quiz</title>
+<style>
+
+body {
+	background: #a9cce3;
+	font: 100% "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+img {
+	max-width: 100%;
+}
+#header; #nav {
+width: 100%
+}
+
+@media screen and (max-width:480px)  {
+}
+
+</style>
+</head>
+<body>
+	<h1>What Is Your Spirit Animal?</h1>
+	<p id= 'introParagraph'>With what animal does your personality align? Find out by taking this quiz!</p>
+	<form>
+	
+
+<p id= 'firstQ'>1. Are you usually a loud or quiet person?<br>
+	<blockquote>
+	<input type ="radio" name="loudOrQuiet" id="loud" value="Loud"> <label for="loud">Loud</label><br>
+	<input type ="radio" name="loudOrQuiet" id="quiet" value="Quiet"> <label for="quiet">Quiet</label>
+	</blockquote>
+</p>
+
+<p id='secondQ'>2. Your closest friends would describe you as:<br>
+	<blockquote>
+	<input type="radio" name="trait" id="loyal" value="Loyal"> <label for="loyal">Loyal</label>
+	<br><input type="radio" name="trait" id="smart" value="Smart"> <label for="smart">Smart</label>
+	<br><input type="radio" name="trait" id="friendly" value="Friendly"> <label for="friendly">Friendly</label>
+	<br><input type="radio" name="trait" id="mellow" value="Mellow"> <label for="mellow">Mellow</label>
+	<br><input type="radio" name="trait" id="strong" value="Strong"> <label for="strong">Strong</label>
+	</blockquote>
+</p>
+		
+<p id= 'thirdQ'>3. You find it easy to adapt to unforeseen change in your life.<br>
+	<blockquote>
+	<input type ="radio" name="yesOrNo" id="agree" value="Agree"> <label for="agree">Agree</label><br>
+	<input type ="radio" name="yesOrNo" id="disagree" value="Disagree"> <label for="disagree">Disagree</label>
+	</blockquote>
+</p>
+
+<p id='fourthQ'>4. If you won the lottery, what would you do with your prize money?<br>
+	<blockquote>
+	<input type="radio" name="money" id="save" value="Save"> <label for="save">Save most of it</label>
+	<br><input type="radio" name="money" id="donate" value="Donate"> <label for="donate">Donate it</label>
+	<br><input type="radio" name="money" id="share" value="Share"> <label for="share">Share it with friends</label>
+	<br><input type="radio" name="money" id="spend" value="Spend"> <label for="spend">Spend most of it</label>
+	</blockquote>
+</p>
+
+<p id='fifthQ'>5. What activity is the best for relieving your stress?<br>
+	<blockquote>
+	<input type="radio" name="stress" id="reading" value="Reading"> <label for="reading">Reading</label>
+	<br><input type="radio" name="stress" id="going out" value="Going Out"> <label for="going out">Going out with friends</label>
+	<br><input type="radio" name="stress" id="exercising" value="Exercising"> <label for="exercising">Exercising</label>
+	<br><input type="radio" name="stress" id="beach" value="Beach"> <label for="beach">Going to the beach</label>
+	<br><input type="radio" name="stress" id="cooking" value="Cooking"> <label for="cooking">Cooking a nice meal</label>
+	</blockquote>
+</p>
+
+<p id='sixthQ'>6. Which activities would you want to do? Select all that apply.<br>
+	<blockquote>
+	<input type="checkbox" name="activity" id="bungee" value="Bungee"> <label for="bungee">Bungee jumping</label>
+	<br><input type="checkbox" name="activity" id="sailing" value="Sailing"> <label for="sailing">Go sailing</label>
+	<br><input type="checkbox" name="activity" id="rest" value="Rest"> <label for="rest">Rest and relax at home</label>
+	<br><input type="checkbox" name="activity" id="restaurant" value="Restaurant"> <label for="restaurant">Try a new restaurant</label>
+	<br><input type="checkbox" name="activity" id="game" value="Game"> <label for="game">Play a game</label>
+	</blockquote>
+</p>
+	
+<p id='seventhQ'>7. Which place would you most like to visit?<br>
+	<blockquote>
+	<input type="radio" name="place" id="tokyo" value="Tokyo"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg" max height=100px>
+	<input type="radio" name="place" id="niagara" value="Niagara"><img src="http://helicotours.com/wp-content/uploads/2013/09/bigstock-Niagara-Falls-closeup-panorama-46618750.jpg" max height=100px>
+	<br><input type="radio" name="place" id="rome" value="Rome"><img src="http://www.airtransat.ca/getmedia/22463e82-447c-49b0-bb98-997284fc3675/Rome03.jpg" max height=100px>
+	<input type="radio" name="place" id="canyon" value="Canyon"><img src="http://a30de2edae0c4b0bc6ba-a8477a60b1c5d9e290ed2e4c0d53743c.r24.cf1.rackcdn.com/2/5/large.jpg" max height=100px>
+	</blockquote>
+</p>
+
+<p id='eighthQ'>8. You see a person collapse in front of you. What do you do first?<br>
+	<blockquote>
+	<input type="radio" name="collapse" id="save them" value="Save Them"> <label for="save them">Rush over and attempt to save the person</label>
+	<br><input type="radio" name="collapse" id="call" value="Call"> <label for="call">Call for help</label>
+	<br><input type="radio" name="collapse" id="ignore" value="Ignore"> <label for="ignore">Pretend not to notice</label>
+	<br><input type="radio" name="collapse" id="panic" value="Panic"> <label for="panic">Panic</label>
+	</blockquote>
+</p>
+
+<p id='ninthQ'>9. When introduced to someone new, you typically:<br>
+	<blockquote>
+	<input type="radio" name="introduced" id="get to know" value="Get To Know"> <label for="get to know">Try to get to know them immediately</label>
+	<br><input type="radio" name="introduced" id="wait" value="Wait"> <label for="wait">Wait for them to talk to you</label>
+	<br><input type="radio" name="introduced" id="smile" value="Smile"> <label for="smile">Smile and say hello only</label>
+	</blockquote>
+</p>
+
+<p id='tenthQ'>10. You have a difficult time with:<br>
+	<blockquote>
+	<input type="checkbox" name="hard" id="listening" value="Listening"> <label for="listening">Listening to others</label>
+	<br><input type="checkbox" name="hard" id="speech" value="Speech"> <label for="speech">Giving a speech/presentation</label>
+	<br><input type="checkbox" name="hard" id="focus" value="Focus"> <label for="focus">Staying focused</label>
+	<br><input type="checkbox" name="hard" id="emotion" value="Emotion"> <label for="emotion">Controlling your emotions</label>
+	<br><input type="checkbox" name="hard" id="info" value="Info"> <label for="info">Learning new information</label>
+	</blockquote>
+</p>
+
+<br><br><input type="button" id="quizButton" value="Get Results!">
+	</form>
+
+	<p id='resultParagraph'> </p>
+</body>
+<script>
+	var animals = ['Turtle','Snake','Wolf','Cat','Dolphin','Owl','Deer','Bear','Rabbit'];
+	var points = [0,0,0,0,0,0,0,0,0];
+	//var result;
+	
+	
+	function init() {
+		var button = document.getElementById('quizButton');
+		button.onclick = checkQuiz;
+	}
+	function checkQuiz() {
+	//answers for question 1
+		var inputs = document.getElementsByName('loudOrQuiet');
+		var q1 = findValue(inputs);
+		switch(q1) {
+			case 'Loud': 
+				points[2]++;
+				points[4]++;
+				points[7]++;
+				break;
+			case 'Quiet': 
+				points[0]++;
+				points[1]++;
+				points[3]++;
+				points[5]++;
+				points[6]++;
+				points[8]++;
+				break;
+		}
+	//answers for question 2
+		inputs = document.getElementsByName('trait');
+		var q2 = findValue(inputs);
+			switch(q2) {
+			case 'Loyal': 
+				points[2]++;
+				break;
+			case 'Smart': 
+				points[3]++;
+				points[5]++;
+				break;
+			case 'Friendly': 
+				points[4]++;
+				points[6]++;
+				break;
+			case 'Mellow': 
+				points[0]++;
+				points[8]++;
+				break;
+			case 'Strong':
+				points[1]++;
+				points[7]++;
+				break;
+		}
+	//answers for question 3
+		inputs = document.getElementsByName('yesOrNo');
+		var q3 = findValue(inputs);
+		switch(q3) {
+			case 'Agree': 
+				points[1]++;
+				points[2]++;
+				points[4]++;
+				points[5]++;
+				points[7]++;
+				break;
+			case 'Disagree': 
+				points[0]++;
+				points[3]++;
+				points[6]++;
+				points[8]++;
+				break;
+			}
+	//answers for question 4
+		inputs = document.getElementsByName('money');
+		var q4 = findValue(inputs);
+		switch(q4) {
+			case 'Save': 
+				points[1]++;
+				points[3]++;
+				points[5]++;
+				break;
+			case 'Donate': 
+				points[0]++;
+				points[8]++;
+				points[6]++;
+				break;
+			case 'Share': 
+				points[2]++;
+				points[4]++;
+				break;
+			case 'Spend': 
+				points[7]++;
+				break;
+		}
+	//answers for question 5
+		inputs = document.getElementsByName('stress');
+		var q5 = findValue(inputs);
+		switch(q5) {
+			case 'Reading': 
+				points[3]++;
+				points[5]++;
+				points[6]++;
+				break;
+			case 'Going Out': 
+				points[4]++;
+				break;
+			case 'Exercising': 
+				points[2]++;
+				points[7]++;
+				break;							
+			case 'Beach': 
+				points[8]++;
+				break;
+			case 'Cooking': 
+				points[0]++;
+				points[1]++;
+				break;
+		}
+	//answers for question 6
+		inputs = document.getElementsByName('activity');
+		var q6 = findValue(inputs);
+		switch(q6) {
+			case 'Bungee': 
+				points[4]++;
+				points[7]++;
+			case 'Sailing': 
+				points[2]++;
+				points[5]++;
+			case 'Rest': 
+				points[0]++;
+				points[6]++;						
+			case 'Restaurant': 
+				points[8]++;
+			case 'Game': 
+				points[1]++;
+				points[3]++;
+				break;
+		}
+	//answers for question 7
+		inputs = document.getElementsByName('place');
+		var q7 = findValue(inputs);
+		switch(q7) {
+			case 'Tokyo': 
+				points[3]++;
+				points[5]++;
+				points[6]++;
+				break;
+			case 'Niagara': 
+				points[4]++;
+				break;
+			case 'Rome': 
+				points[2]++;
+				points[7]++;
+				break;							
+			case 'Canyon': 
+				points[8]++;
+				points[1]++;
+				points[0]++;
+				break;
+		}
+	//answers for question 8	
+		inputs = document.getElementsByName('collapse');
+		var q8 = findValue(inputs);
+		switch(q8) {
+			case 'Save Them': 
+				points[2]++;
+				points[4]++;
+				points[7]++;
+				break;
+			case 'Call': 
+				points[5]++;
+				break;
+			case 'Ignore': 
+				points[0]++;
+				points[1]++;
+				points[3]++;
+				break;							
+			case 'Panic': 
+				points[6]++;
+				points[8]++;
+				break;
+		}	
+
+	//answers for question 9	
+		inputs = document.getElementsByName('introduced');
+		var q9 = findValue(inputs);
+		switch(q9) {
+			case 'Get To Know': 
+				points[2]++;
+				points[4]++;
+				points[7]++;
+				break;
+			case 'Wait': 
+				points[0]++;
+				points[1]++;
+				points[6]++;
+				break;
+			case 'Smile': 
+				points[3]++;
+				points[5]++;
+				points[8]++;
+				break;						
+		}	
+		
+		//answers for question 10
+		inputs = document.getElementsByName('hard');
+		var q10 = findValue(inputs);
+			switch(q10) {
+			case 'Listening': 
+				points[4]++;
+				points[7]++;
+			case 'Speech': 
+				points[1]++;
+				points[6]++;
+			case 'Focus': 
+				points[5]++;
+			case 'Emotion': 
+				points[2]++;
+				points[3]++;
+			case 'Info':
+				points[0]++;
+				points[8]++;
+				break;
+		}
+		
+
+		
+		//keep track of the highest point value so far
+		var maxScore = 0;
+		//keep track of where that high score is (the index)
+		var maxIndex = 0;
+		//cycle through to find the highest score
+		for (var i=0; i<points.length; i++) {
+			if (points[i] > maxScore) {
+				//saves the index if this is a new high score
+				maxScore = points[i];
+				maxIndex = i;
+			}
+		}
+		//grabs the house corresponding with the high score's index
+		animals = animals[maxIndex];
+		//displays results
+		displayAnimal(animals);
+
+		
+
+	}
+	function findValue(inputs) {
+		var checked;
+		for (var i=0; i<inputs.length; i++) {
+			if (inputs[i].checked) {
+				//alert(inputs[i].value);
+				checked = inputs[i].value;
+				return(checked);
+			}
+		}
+		if (!checked) {
+			alert('Please choose a value.');
+		}
+	}
+
+	
+	function displayAnimal(animals) {
+		var image = document.createElement('img');
+		image.className = 'animal';
+		var source = document.getElementById('resultParagraph');
+		var text = 'Congratulations! Your spirit animal is a ' + animals + '!';
+		
+		switch(animals) {
+			case 'Turtle': 
+				image.src = 'http://i59.tinypic.com/npq89s.jpg';
+				break;
+			case 'Snake': 
+				image.src = 'http://i58.tinypic.com/33d8by9.jpg';
+				break;
+			case 'Wolf': 
+				image.src = 'http://i61.tinypic.com/2u8dvk7.jpg';
+				break;
+			case 'Cat': 
+				image.src = 'http://i62.tinypic.com/6eql3n.jpg';
+				break;
+			case 'Dolphin': 
+				image.src = 'http://i60.tinypic.com/msc9sg.jpg';
+				break;
+			case 'Owl': 
+				image.src = 'http://i58.tinypic.com/5ugso3.jpg';
+				break;
+			case 'Deer': 
+				image.src = 'http://i62.tinypic.com/28w1lkx.jpg';
+				break;
+			case 'Bear': 
+				image.src = 'http://i60.tinypic.com/dous7q.jpg';
+				break;
+			case 'Rabbit': 
+				image.src = 'http://i57.tinypic.com/afavzk.jpg';
+				break;
+			
+		}
+		
+		source.appendChild(image);
+		source.innerHTML += '<br>' + text;
+
+
+	}
+	window.onload = init;
+	document.write('<br><br>This quiz is intended for educational purposes only. Spirit animal drawings are original artwork by Lauren Schoepfer, 2015.');
+</script>
+</html>
+
+
+
+
+
+

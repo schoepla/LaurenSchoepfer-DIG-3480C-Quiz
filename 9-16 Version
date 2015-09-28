@@ -1,0 +1,99 @@
+<html>
+<head>
+
+	<title>Lauren Schoepfer's Quiz</title>
+<style>
+
+body {
+	background: #f9f3e9;
+	font: 100% "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*
+img {
+	max-width: 100%;
+}
+h2 {
+	text-align: center;
+	font-variant: small-caps;
+}
+#header; #nav {
+width: 100%
+}
+
+@media screen and (max-width:480px)  {
+	#contact1 {
+		width: 48%;
+		margin: 1em 0;
+		border-bottom: 1px dashed #cccccc;
+		float: left;
+}
+#contact2 {
+		width: 48%
+		margin: 1em 0;
+		border-bottom: 1px dashed #000000
+		float: right;
+}
+#photo1 {
+	width: 70%;
+	float: left;
+}
+#photo2 {
+	
+}
+*/
+</style>
+</head>
+<body>
+	<h1>What Is Your Spirit Animal?</h1>
+	<p id= 'introParagraph'>With what animal does your personality align? Find out by taking this quiz!</p>
+	<form>
+	
+	
+	<p id= 'q1'>1. Are you usually a loud or quiet person?</p>
+	<blockquote>
+	<input type ="radio" name="trait" id="loud" value="Loud"> <label for="loud">Loud</label>
+	<input type ="radio" name="trait" id="quiet" value="Quiet"> <label for="quiet">Quiet</label>
+	</blockquote>
+	<br>
+	<p id= 'q2'>2. What is your ideal pet?</p>
+	<blockquote>
+	<input type="image" src="http://exmoorpet.com/wp-content/uploads/2012/08/cat.png" max height=200px name="animal" id="cat" value="Cat" />
+	<input type="image" src="http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg" max height=200px  name="animal" id="dog" value="Dog" />
+
+		<br>
+
+	</blockquote>
+	
+	<input type="button" id="quizButton" value="Get Results!">
+	</form>
+</body>
+<script>
+	//grab the button and wait for a click
+	var button = document.getElementById('quizButton');
+	button.onclick = checkQuiz;
+	//get the results when the button is clicked
+	function checkQuiz() {
+		//confirm that the button was clicked
+		console.log('Button was clicked!');
+		//create a variable to store the user's house
+		var house;
+		//get the input data as an array
+		var inputs = document.getElementsByName('house');
+		//loop through all the possible inputs (the radio buttons)
+		for (var i=0; i < inputs.length; i++) {
+			//see if one of the buttons is selected
+			if (inputs[i].checked) {
+				//if it is save the house name
+				house = inputs[i].value;
+				alert(house);
+			}
+		}
+		//if house hasn't been defined, no choice was picked
+		if (!house) {
+			alert('Please choose a house.');
+		}
+	}
+
+</script>
+</html>
